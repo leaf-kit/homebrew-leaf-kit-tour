@@ -1,12 +1,12 @@
 class LeafKitTour < Formula
   desc "Interactive CLI installer for leaf-kit Markdown toolkit"
   homepage "https://github.com/leaf-kit/leaf-kit-tour"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/leaf-kit/leaf-kit-tour/releases/download/v0.1.0/leaf-kit-tour-0.1.0-darwin-x86_64.tar.gz"
-    sha256 "355d22fe0ef99ebe447bd2cb8ccd601114671b139bc0b636d5ee51286a4f7969"
+    url "https://github.com/leaf-kit/leaf-kit-tour/releases/download/v0.2.0/leaf-kit-tour-0.2.0-darwin-x86_64.tar.gz"
+    sha256 "41371ccfff7726bfd1275e0c3faef53fe4fb07464df242a4c5153406376f06c3"
   end
 
   def install
