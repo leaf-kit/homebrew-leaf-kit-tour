@@ -1,16 +1,14 @@
 class LeafKitTour < Formula
   desc "Interactive CLI installer for leaf-kit Markdown toolkit"
   homepage "https://github.com/leaf-kit/leaf-kit-tour"
-  version "0.4.1"
+  url "https://github.com/leaf-kit/leaf-kit-tour/archive/refs/tags/v0.4.2.tar.gz"
+  sha256 "01b2ebbcb6f801c6355bf2f1eb810e79696caf76861125ecbafd1df5f4e936c8"
   license "MIT"
 
-  on_macos do
-    url "https://github.com/leaf-kit/leaf-kit-tour/releases/download/v0.4.1/leaf-kit-tour-0.4.1-darwin-x86_64.tar.gz"
-    sha256 "512a5e3cb36a6ff15942738b9cb79f1987a862f87db90af87a9c741575013875"
-  end
+  depends_on "rust" => :build
 
   def install
-    bin.install "leaf-kit-tour"
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
