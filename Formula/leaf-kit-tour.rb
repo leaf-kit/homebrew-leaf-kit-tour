@@ -6,7 +6,7 @@ class LeafKitTour < Formula
 
   on_macos do
     url "https://github.com/leaf-kit/leaf-kit-tour/releases/download/v0.4.1/leaf-kit-tour-0.4.1-darwin-x86_64.tar.gz"
-    sha256 "3936564499290e78b3b557c558de69c5d0ea8487afdd031a29aad647ffb2b64f"
+    sha256 "512a5e3cb36a6ff15942738b9cb79f1987a862f87db90af87a9c741575013875"
   end
 
   def install
